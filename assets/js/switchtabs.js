@@ -2,12 +2,12 @@ const productData = {
   new: [
     { name: "European Zesty Lemon", price: 80, image: "./assets/images/new arrivals 1.png" },
     { name: "Apple from Kashmir", price: 240, image: "./assets/images/new arrivals 2.png" },
-    { name: "Coconuts", price: 320, image: "/assets/images/new arrivals 3.png" }
+    { name: "Coconuts", price: 320, image: "./assets/images/new arrivals 3.png" }
   ],
   trending: [
-    { name: "Organic Garlic", price: 150, image: "..images/trending 1.png" },
-    { name: "Strawberries", price: 240, image: "/images/trending 2.png" },
-    { name: "Spinach", price: 25, image: "../images/trending 3.png" }
+    { name: "Organic Garlic", price: 150, image: "./assets/images/trending 1.png" },
+    { name: "Strawberries", price: 240, image: "./assets/images/trending 2.png" },
+    { name: "Spinach", price: 25, image: "./assets/images/trending 3.png" }
   ],
   best: [
     { name: "Raddish", price: 80, image: "assets/images/best selling home 1.png" },
