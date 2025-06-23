@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Dairy</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/vegetables.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom row: nav links -->
+    <div class="header-bottom">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="sales.html">Best Sales</a>
+        <a href="blogs.html">Blogs</a>
+      </nav>
+      <div class="right-links">
+        <a href="cart.html" class="cart-icon">
+          <img src="./assets/images/cart icon.png" alt="Cart">
+        </a>
+        <a href="account.html" class="account-btn">Register Now</a>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="title">Dairy & Egg</h2>
+
+  <div class="container">
+    <!-- Filter Sidebar -->
+    <div class="sidebar">
+      <h2>Filter</h2>
+      <label for="priceRange">Sort by Price</label><br>
+      <div class="price-display" id="priceValue">100</div>
+      <input type="range" id="priceRange" min="0" max="300" step="10" value="100">
+    </div>
+
+    <!-- Product Listing -->
+    <div class="products">
+
+      <div class="products-card" data-price="120">
+        <img src="./assets/images/diary cate 1.png"
+          onclick="viewProduct('Organic Eggs', 120, ['./assets/images/diary cate 1.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Organic Eggs</h2>
+        <h2>₹120</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Organic Eggs', 120, './assets/images/diary cate 1.png', 'Dairy & Egg')">Add to Cart</button>
+      </div>
+
+      <div class="products-card" data-price="80">
+        <img src="./assets/images/diary cate 2.png"
+          onclick="viewProduct('Milk', 80, ['./assets/images/diary cate 2.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Milk</h2>
+        <h2>₹ 80</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Milk', 80, './assets/images/diary cate 2.png', 'Dairy & Egg')">Add to cart</button>
+      </div>
+
+      <div class="products-card" data-price="120">
+        <img src="./assets/images/diary cate 3.png"
+          onclick="viewProduct('Country Eggs', 120, ['./assets/images/diary cate 3.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Country Eggs</h2>
+        <h2>₹ 120</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Country Eggs', 120, './assets/images/diary cate 3.png', 'Dairy & Egg')">Add to
+          cart</button>
+      </div>
+
+      <div class="products-card" data-price="60">
+        <img src="./assets/images/diary cate 4.png"
+          onclick="viewProduct('Panneer', 60, ['./assets/images/diary cate 4.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Panneer</h2>
+        <h2>₹60</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Panneer', 60, './assets/images/diary cate 4.png', 'Dairy & Egg')">Add to cart</button>
+      </div>
+      <div class="products-card" data-price="70">
+        <img src="./assets/images/diary cate 5.png"
+          onclick="viewProduct('Eggs', 70, ['./assets/images/diary cate 5.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Eggs</h2>
+        <h2>₹70</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Eggs', 70, './assets/images/diary cate 5.png', 'Dairy & Egg')">Add to cart</button>
+      </div>
+      <div class="products-card" data-price="90">
+        <img src="./assets/images/diary cate 6.png"
+          onclick="viewProduct('Radish', 90, ['./assets/images/diary cate 6.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Organic Lettuce</h2>
+        <h2>₹90</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Organic Lettuce', 90, './assets/images/diary cate 6.png', 'Dairy & Egg')">Add to
+          cart</button>
+      </div>
+      <div class="products-card" data-price="120">
+        <img src="./assets/images/diary cate 7.png"
+          onclick="viewProduct('Cheese', 120, ['./assets/images/diary cate 7.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Cheese</h2>
+        <h2>₹120</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Cheese', 120, './assets/images/diary cate 7.png', 'Dairy & Egg')">Add to cart</button>
+      </div>
+      <div class="products-card" data-price="50">
+        <img src="./assets/images/diary cate 8.png"
+          onclick="viewProduct('Egg Pack', 50, ['./assets/images/diary cate 8.png', './assets/images/diary cate 5.png', './assets/images/diary cate 8.png'], 'Each of our products are hand-selected from the local farmers and helps you improve good health', '   ', 'Dairy & Egg')">
+        <h2>Egg Pack</h2>
+        <h2>₹50</h2>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Egg Pack', 50, './assets/images/diary cate 8.png', 'Dairy & Egg')">Add to cart</button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <!-- footer section -->
+
+  <div class="contact-section">
+    <div class="orange-box">
+      <div class="contact-text">
+        <strong>Get in Touch with us</strong><br>
+        +91 91010 90000
+      </div>
+    </div>
+    <div class="icon-strip">
+      <div class="feature">
+        <img src="./assets/images/free shipping icon.png" alt="Free Shipping">
+        <div>
+          <strong>Free Shipping</strong><br>
+          <small>For Orders Above 500</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/fresh produce icon.png" alt="Fresh Produce">
+        <div>
+          <strong>Fresh Produce</strong><br>
+          <small>Guaranteed Product Warranty</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/safety icon.png" alt="Safety">
+        <div>
+          <strong>100% Safety & Security</strong><br>
+          <small>Your Data is Highly Secured</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-col logo-col">
+        <img src="./assets/images/logo.png" alt="Logo" class="footer-logo">
+        <p>
+          Fresh groceries, particularly fruits, vegetables,<br>
+          whole grains, and lean proteins, play a crucial<br>
+          role in nourishing our bodies and promoting<br>
+          overall well-being
+        </p>
+      </div>
+
+      <div class="footer-col nav-col">
+        <h3>NAVIGATE</h3>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms & Conditions</a>
+        <a href="./how-to-order.html">How to Order</a>
+        <a href="./about.html">About Us</a>
+      </div>
+
+      <div class="footer-col store-col">
+        <h3>G-STORE</h3>
+        <p>Reg: T21542GST548</p>
+        <p>TIN: 14578452884</p>
+        <p>Email: groceries at doorstep@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyrights 2022© Groceries At Doorstep Ltd
+    </div>
+  </footer>
+
+<script src="./assets/js/search.js"></script>
+<script src="./assets/js/toggle.js"></script>
+
+<script src="./assets/js/product.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/vegetables.js"></script>
+</body>
+
+</html>

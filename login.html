@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Login</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/register.css">
+
+</head>
+<body>
+
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <!-- Bottom row: nav links -->
+  <div class="header-bottom">
+        <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="sales.html">Best Sales</a>
+      <a href="blogs.html">Blogs</a>
+    </nav>
+
+    <div class="right-links">
+      <a href="cart.html" class="cart-icon">
+        <img src="./assets/images/cart icon.png" alt="Cart">
+      </a>
+      <a href="account.html" class="account-btn">Register Now</a>
+    </div>
+  </div>
+
+
+
+  <div class="container login-only">
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <h2>Log In</h2>
+      <label>Email Address</label>
+      <input type="email" id="loginEmail" placeholder="Enter your email" />
+
+      <label>Password</label>
+      <input type="password" id="loginPassword" placeholder="Enter your password" />
+
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const email = document.getElementById("loginEmail").value.trim();
+      const password = document.getElementById("loginPassword").value;
+
+      const storedEmail = localStorage.getItem("user_email");
+      const storedPassword = localStorage.getItem("user_password");
+
+      if (email === storedEmail && password === storedPassword) {
+        alert("Login successful!");
+        window.location.href = "./index.html";
+        return false;
+      } else {
+        alert("Invalid credentials.");
+        return false;
+      }
+    }
+  </script>
+  <script src="./assets/js/toggle.js"></script>
+
+</body>
+</html>

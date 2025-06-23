@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Home</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Bottom row: nav links -->
+  <div class="header-bottom">
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="sales.html">Best Sales</a>
+      <a href="blogs.html">Blogs</a>
+    </nav>
+
+    <div class="right-links">
+      <a href="cart.html" class="cart-icon">
+        <img src="./assets/images/cart icon.png" alt="Cart">
+      </a>
+      <a href="account.html" class="account-btn">Register Now</a>
+    </div>
+  </div>
+
+  <section class="promo-section">
+
+    <!-- Left Banner -->
+    <div class="promo-banner left-banner">
+      <div class="promo-content">
+        <p class="tagline">
+          Halal Products <span class="highlight-red">Online Delivery Shop</span>
+        </p>
+        <h1>
+          Make Healthy<br>
+          Life with <span class="highlight-green">Fresh</span><br>
+          Grocery
+        </h1>
+        <p class="description">
+          Fresh groceries, particularly fruits, vegetables, whole grains, and lean proteins,
+          play a crucial role in nourishing our bodies and promoting overall well-being
+        </p>
+        <a href="categories.html" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Right Banner -->
+    <div class="promo-banner right-banner">
+      <div class="discount-ribbon">
+        <span>-12% off</span>
+      </div>
+      <div class="promo-content dark">
+        <p class="sale-title">Black Friday Sale</p>
+        <h2>Organic Food Up<br>To 50% Off</h2>
+        <a href="categories.html" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section">
+    <div class="container">
+      <h2>Browse All Categories</h2>
+      <h1>Explore a diverse range of categories to find exactly what you need!</h1>
+
+      <div class="categories-grid">
+        <a href="/vegetables.html" class="category-box">
+          <div class="icon-circle green"><img src="./assets/images/vegetable icon.png" alt="Vegetable"></div>
+          <h4>Vegetable</h4>
+          <p>20 Items</p>
+        </a>
+
+        <a href="/sales.html" class="category-box">
+          <div class="icon-circle pink"><img src="./assets/images/fresh fruits icon.png" alt="Fresh Fruits"></div>
+          <h4>Fresh Fruits</h4>
+          <p>12 Items</p>
+        </a>
+
+        <a href="/meat.html" class="category-box">
+          <div class="icon-circle orange"><img src="./assets/images/meat icon.png" alt="Meat"></div>
+          <h4>Meat</h4>
+          <p>7 Items</p>
+        </a>
+
+        <a href="/meat.html" class="category-box">
+          <div class="icon-circle purple"><img src="./assets/images/seafood icon.png" alt="Sea Food"></div>
+          <h4>Sea Food</h4>
+          <p>12 Items</p>
+        </a>
+
+        <a href="/dairy.html" class="category-box">
+          <div class="icon-circle blue"><img src="./assets/images/milk & diary icon.png" alt="Milk & dairy"></div>
+          <h4>Milk & dairy</h4>
+          <p>8 Items</p>
+        </a>
+
+        <a href="/bakery.html" class="category-box">
+          <div class="icon-circle yellow"><img src="./assets/images/fresh bread icon.png" alt="Fresh Bread"></div>
+          <h4>Fresh Bread</h4>
+          <p>24 Items</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse Banner -->
+  <div class="bnr">
+    <section class="browse-banner">
+      <h3>Enjoy Upto 20% off on your first order</h3>
+      <h1>Fresh Produce, From Farm <br> Products At a Reasonable Price!</h1>
+      <a href="categories.html"><button>Shop Now</button></a>
+    </section>
+  </div>
+
+  <section class="featured-section">
+    <h2>Featured Products</h2>
+    <p>Each item is carefully selected for quality, freshness, and nutritional benefits.</p>
+
+    <div class="product-grid">
+      <!-- Card 1 -->
+      <div class="product-card">
+        <img src="./assets/images/featured pro home 1.png" class="product-img">
+        <h3>Organic Tomatoes</h3>
+        <p class="price">₹ 80</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Organic Tomatoes', 80, './assets/images/featured pro home 1.png')">Add to
+          cart</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card">
+        <img src="./assets/images/featured pro home 2.png" class="product-img">
+        <h3>Fresh Meat</h3>
+        <p class="price">₹ 420</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star gray-star">
+        </div>
+        <button onclick="addToCart('Fresh Meat', 420, './assets/images/featured pro home 2.png')">Add to cart</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card">
+        <img src="./assets/images/featured pro home 3.png" class="product-img">
+        <h3>Seasonal Mangoes</h3>
+        <p class="price">₹ 120</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Seasonal Mangoes', 120, './assets/images/featured pro home 3.png')">Add to
+          cart</button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product-card">
+        <img src="./assets/images/featured pro home 4.png" class="product-img">
+        <h3>Green Onions</h3>
+        <p class="price">₹ 100</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+        </div>
+        <button onclick="addToCart('Green Onions', 100, './assets/images/featured pro home 4.png')">Add to cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-container">
+    <!-- Top Section -->
+    <div class="top-section">
+      <!-- Left Column (Tabs + Products) -->
+      <div class="product-tabs">
+        <div class="tabs">
+          <button class="tab-btn active-tab" onclick="switchTab('new', this)">New Arrivals</button>
+          <button class="tab-btn" onclick="switchTab('trending', this)">Trending Products</button>
+          <button class="tab-btn" onclick="switchTab('best', this)">Best Sellings</button>
+        </div>
+        <div id="product-list"></div>
+      </div>
+
+      <!-- Right Column (Promo) -->
+      <div class="promo-box">
+        <h2>Get <span class="highlight">20% Discount</span> on <br />Your First Sale</h2>
+        <p>To celebrate your first purchase with us, enjoy a 20% discount on your first order.</p>
+        <div class="user-boxes">
+          <div class="user-box">
+            <h3>45K+</h3>
+            <p>Active Users</p>
+          </div>
+          <div class="user-box">
+            <h3>45K+</h3>
+            <p>Active Users</p>
+          </div>
+          <div class="user-box">
+            <h3>45K+</h3>
+            <p>Active Users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Deals Background Section -->
+    <div class="deals-section">
+      <div class="deals-content">
+        <h2>Best Deals <span class="highlight">This Week</span></h2>
+        <p>Don't miss out on our incredible deals to help you <br>save while enjoying fresh, high-quality groceries!</p>
+        <div class="countdown">
+          <div class="time-box">
+            <h3>7</h3>
+            <p>Days</p>
+          </div>
+          <div class="time-box">
+            <h3>168</h3>
+            <p>Hours</p>
+          </div>
+          <div class="time-box">
+            <h3>1004</h3>
+            <p>Minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal Cards Section -->
+    <div class="deal-cards">
+      <div class="card" data-id="1">
+        <img src="./assets/images/best deals 1.png" />
+        <h2>Red Chilles</h2>
+        <p>₹ 80</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+
+        </div>
+        <button onclick="addToCart('Red Chilles', 80,'./assets/images/best deals 1.png')">Add to cart</button>
+
+      </div>
+      <div class="card" data-id="2">
+        <img src="./assets/images/best deals 2.png" />
+        <h2>Fresh Eggs</h2>
+        <p>₹ 120</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star gray-star">
+
+        </div>
+        <button onclick="addToCart('Fresh Eggs', 120,'./assets/images/best deals 2.png')">Add to cart</button>
+      </div>
+      <div class="card" data-id="3">
+        <img src="./assets/images/best deals 3.png" />
+        <h2>Soya Chunks</h2>
+        <p>₹ 70</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+
+        </div>
+        <button onclick="addToCart('Soya Chunks', 70,'./assets/images/best deals 3.png')">Add to cart</button>
+      </div>
+      <div class="card" data-id="4">
+        <img src="./assets/images/best deals 4.png" />
+        <h2>Dry Beans</h2>
+        <p>₹ 135</p>
+        <div class="stars">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+          <img src="./assets/images/star.png" class="star">
+
+        </div>
+        <button onclick="addToCart('Dry Beans', 135,'./assets/images/best deals 4.png')">Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="feedback-section">
+    <div class="feedback-heading">
+      <h2>Our Customer Feedback</h2>
+      <p>We value the opinions of our customers that brings improvement in our services</p>
+    </div>
+
+    <div class="feedback-container">
+
+
+
+      <div class="feedback-left">
+        <img src="./assets/images/map.png" alt="World Map" class="world-map">
+      </div>
+      <div class="feedback-right">
+        <div class="feedback-card">
+          <img src="./assets/images/review image.png" alt="Customer" class="customer-img">
+          <div class="customer-info">
+            <h3>George Stephen</h3>
+            <div class="stars">
+              <img src="./assets/images/star.png" alt="Star">
+              <img src="./assets/images/star.png" alt="Star">
+              <img src="./assets/images/star.png" alt="Star">
+              <img src="./assets/images/star.png" alt="Star">
+              <img src="./assets/images/star.png" alt="Star">
+            </div>
+            <p>“I love the quality of the produce! Everything is always fresh and tastes amazing. The prices are
+              competitive, and the weekly deals are fantastic. I save so much on my grocery bills”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- footer section -->
+
+  <div class="contact-section">
+    <div class="orange-box">
+      <div class="contact-text">
+        <strong>Get in Touch with us</strong><br>
+        +91 91010 90000
+      </div>
+    </div>
+    <div class="icon-strip">
+      <div class="feature">
+        <img src="./assets/images/free shipping icon.png" alt="Free Shipping">
+        <div>
+          <strong>Free Shipping</strong><br>
+          <small>For Orders Above 500</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/fresh produce icon.png" alt="Fresh Produce">
+        <div>
+          <strong>Fresh Produce</strong><br>
+          <small>Guaranteed Product Warranty</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/safety icon.png" alt="Safety">
+        <div>
+          <strong>100% Safety & Security</strong><br>
+          <small>Your Data is Highly Secured</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-col logo-col">
+        <img src="./assets/images/logo.png" alt="Logo" class="footer-logo">
+        <p>
+          Fresh groceries, particularly fruits, vegetables,<br>
+          whole grains, and lean proteins, play a crucial<br>
+          role in nourishing our bodies and promoting<br>
+          overall well-being
+        </p>
+      </div>
+
+      <div class="footer-col nav-col">
+        <h3>NAVIGATE</h3>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms & Conditions</a>
+        <a href="./how-to-order.html">How to Order</a>
+        <a href="./about.html">About Us</a>
+      </div>
+
+      <div class="footer-col store-col">
+        <h3>G-STORE</h3>
+        <p>Reg: T21542GST548</p>
+        <p>TIN: 14578452884</p>
+        <p>Email: groceries at doorstep@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyrights 2022© Groceries At Doorstep Ltd
+    </div>
+  </footer>
+
+<script src="./assets/js/toggle.js"></script>
+  <script src="script.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/switchtabs.js"></script>
+  <script src="./assets/js/vegetables.js"></script>
+
+
+</body>
+
+</html>

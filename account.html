@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Register</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/register.css">
+</head>
+
+<body>
+
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <!-- Bottom row: nav links -->
+  <div class="header-bottom">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="sales.html">Best Sales</a>
+      <a href="blogs.html">Blogs</a>
+    </nav>
+
+    <div class="right-links">
+      <a href="cart.html" class="cart-icon">
+        <img src="./assets/images/cart icon.png" alt="Cart">
+      </a>
+      <a href="account.html" class="account-btn">Register Now</a>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <form id="registerForm" onsubmit="return validateRegister()">
+      <h2>Customer Registeration</h2>
+      <label>Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" />
+
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="Enter your Email Id" />
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Create a password" />
+
+      <label>Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Re-enter password" />
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <div class="login-section">
+      <h2>Log In</h2>
+      <p>If you already have an account,<br>Login here</p>
+      <a href="login.html"><button class="login-btn">Log In</button></a>
+    </div>
+  </div>
+
+  <script>
+    function validateRegister() {
+      const name = document.getElementById("fullname").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const pass = document.getElementById("password").value;
+      const confirmPass = document.getElementById("confirmPassword").value;
+
+      const nameRegex = /^[A-Za-z ]{3,30}$/;
+      const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+      if (!nameRegex.test(name)) {
+        alert("Name must be 3-30 letters only (alphabets and space).");
+        return false;
+      }
+
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email.");
+        return false;
+      }
+
+      if (pass.length < 5) {
+        alert("Password must be at least 5 characters.");
+        return false;
+      }
+
+      if (pass !== confirmPass) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+      localStorage.setItem("user_email", email);
+      localStorage.setItem("user_password", pass);
+      alert("Registration successful! You can now log in.");
+      window.location.href = "login.html";
+      return false;
+    }
+  </script>
+
+
+  <script src="./assets/js/toggle.js"></script>
+</body>
+
+</html>

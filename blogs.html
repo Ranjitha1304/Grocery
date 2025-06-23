@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groceries | Blogs</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/blogs.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+    
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+
+
+  </header>
+
+    <!-- Bottom row: nav links -->
+    <div class="header-bottom">
+          <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="sales.html">Best Sales</a>
+        <a href="blogs.html" class="active">Blogs</a>
+      </nav>
+
+      <div class="right-links">
+        <a href="cart.html" class="cart-icon">
+          <img src="./assets/images/cart icon.png" alt="Cart">
+        </a>
+        <a href="account.html" class="account-btn">Register Now</a>
+      </div>
+    </div>
+
+
+  <div class="blog-container">
+    <!-- Left Column -->
+    <div class="left-featured">
+      <a href="blog_content.html">
+        <div style="position: relative;">
+          <span class="featured-badge">FEATURED ARTICLE</span>
+          <img src="./assets/images/blog header image.png" alt="Featured Blog">
+        </div>
+      </a>
+      <div class="left-content">
+        <small>08/04/2025</small>
+        <h2>Eco-Friendly Shopping Tips</h2>
+        <p>“Welcome to our Plant Care section, where we share expert advice and practical tips to help you have your trees, and plants healthy and thriving...</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="quick-prefix">
+      <h3>Quick Prefix in this Article:</h3>
+      <ol>
+        <li>What are Indoor Plants?</li>
+        <li>How do you plant indoor plants?</li>
+        <li>How much light do indoor plants need?</li>
+        <li>What qualities make for a good indoor plants?</li>
+        <li>Which indoor plants are easy to take care of?</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Blog Cards Section -->
+  <div class="blog-grid">
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 1.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>08/04/2025</small>
+        <h3>Budget-Friendly Grocery</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 2.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>22/03/2025</small>
+        <h3>Meal planning for the week</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 3.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>15/03/2025</small>
+        <h3>Healthy grocery swaps</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 4.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>08/04/2025</small>
+        <h3>Cooking with kids</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 5.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>22/03/2025</small>
+        <h3>Best Grocery Ingredient for salad</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <a href="blog_content.html">
+        <img src="./assets/images/blog 6.png" alt="Blog Image">
+      </a>
+      <div class="blog-card-content">
+        <small>15/03/2025</small>
+        <h3>Seasonal store produce</h3>
+        <p>“Welcome to our Plant Care section, where we share expert advice...</p>
+        <a class="read-btn" href="blog_content.html">Read Now</a>
+      </div>
+    </div>
+  </div>
+
+
+
+ <!-- footer section -->
+  
+<div class="contact-section">
+  <div class="orange-box">
+    <div class="contact-text">
+      <strong>Get in Touch with us</strong><br>
+      +91 91010 90000
+    </div>
+  </div>
+  <div class="icon-strip">
+    <div class="feature">
+      <img src="./assets/images/free shipping icon.png" alt="Free Shipping">
+      <div>
+        <strong>Free Shipping</strong><br>
+        <small>For Orders Above 500</small>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="./assets/images/fresh produce icon.png" alt="Fresh Produce">
+      <div>
+        <strong>Fresh Produce</strong><br>
+        <small>Guaranteed Product Warranty</small>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="./assets/images/safety icon.png" alt="Safety">
+      <div>
+        <strong>100% Safety & Security</strong><br>
+        <small>Your Data is Highly Secured</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-col logo-col">
+      <img src="./assets/images/logo.png" alt="Logo" class="footer-logo">
+      <p>
+        Fresh groceries, particularly fruits, vegetables,<br>
+        whole grains, and lean proteins, play a crucial<br>
+        role in nourishing our bodies and promoting<br>
+        overall well-being
+      </p>
+    </div>
+
+    <div class="footer-col nav-col">
+      <h3>NAVIGATE</h3>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms & Conditions</a>
+        <a href="./how-to-order.html">How to Order</a>
+        <a href="./about.html">About Us</a>
+    </div>
+
+    <div class="footer-col store-col">
+      <h3>G-STORE</h3>
+      <p>Reg: T21542GST548</p>
+      <p>TIN: 14578452884</p>
+      <p>Email: groceries at doorstep@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyrights 2022© Groceries At Doorstep Ltd
+  </div>
+</footer> 
+
+
+<script src="./assets/js/toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+} */
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #f7f8fa;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+    background-color: #f7f8fa;
+
+}
+
+form {
+  flex: 0.6;
+}
+
+.login-section {
+  flex: 0.3;
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.login-section h2 {
+  margin-bottom: 10px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+.container label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #111;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.register-btn {
+  background-color: #49c21d;
+  width: 50%;
+}
+
+.login-btn {
+  background-color: #49c21d;
+  width: 100%;
+}
+
+.login-only {
+  justify-content: center;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile: 320px to 767px */
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-section {
+    margin-left: 0;
+    padding-top: 30px;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+}
+
+/* Tablet: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .login-section {
+    margin-left: 0;
+    padding-top: 30px;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+}
+
+/* Desktop Small: 1024px to 1300px */
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .register-btn {
+    width: 60%;
+  }
+}

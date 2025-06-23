@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Categories</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/categories.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Bottom row: nav links -->
+    <div class="header-bottom">
+          <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+      <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="sales.html">Best Sales</a>
+        <a href="blogs.html">Blogs</a>
+      </nav>
+
+      <div class="right-links">
+        <a href="cart.html" class="cart-icon">
+          <img src="./assets/images/cart icon.png" alt="Cart">
+        </a>
+        <a href="account.html" class="account-btn">Register Now</a>
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="categories-container">
+    <!-- First Row -->
+    <div class="category-grid">
+      <a href="sales.html" class="category-card">
+        <img src="./assets/images/fruits cate.png" alt="Fruits">
+        <p>Fruits</p>
+      </a>
+
+      <a href="vegetables.html" class="category-card">
+        <img src="./assets/images/vege cate.png" alt="Vegetables">
+        <p>Vegetables</p>
+      </a>
+
+      <a href="dairy.html" class="category-card">
+        <img src="./assets/images/eggs cate.png" alt="Dairy & Eggs">
+        <p>Dairy & Eggs</p>
+      </a>
+
+      <a href="meat.html" class="category-card">
+        <img src="./assets/images/meat & sea food cate.png" alt="Meat & Seafood">
+        <p>Meat & Seafood</p>
+      </a>
+    </div>
+
+    <!-- Second Row -->
+    <div class="category-grid">
+      <a href="bakery.html" class="category-card">
+        <img src="./assets/images/bakery cate.png" alt="Bakery">
+        <p>Bakery</p>
+      </a>
+
+      <a href="pantry.html" class="category-card">
+        <img src="./assets/images/pantry cate.png" alt="Pantry Staples">
+        <p>Pantry Staples</p>
+      </a>
+
+      <a href="snacks.html" class="category-card">
+        <img src="./assets/images/snack cate.png" alt="Snacks & Beverages">
+        <p>Snacks & Beverages</p>
+      </a>
+
+      <a href="frozen_food.html" class="category-card">
+        <img src="./assets/images/frozen cate.png" alt="Frozen Food">
+        <p>Frozen Food</p>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- footer section -->
+
+  <div class="contact-section">
+    <div class="orange-box">
+      <div class="contact-text">
+        <strong>Get in Touch with us</strong><br>
+        +91 91010 90000
+      </div>
+    </div>
+    <div class="icon-strip">
+      <div class="feature">
+        <img src="./assets/images/free shipping icon.png" alt="Free Shipping">
+        <div>
+          <strong>Free Shipping</strong><br>
+          <small>For Orders Above 500</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/fresh produce icon.png" alt="Fresh Produce">
+        <div>
+          <strong>Fresh Produce</strong><br>
+          <small>Guaranteed Product Warranty</small>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./assets/images/safety icon.png" alt="Safety">
+        <div>
+          <strong>100% Safety & Security</strong><br>
+          <small>Your Data is Highly Secured</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-col logo-col">
+        <img src="./assets/images/logo.png" alt="Logo" class="footer-logo">
+        <p>
+          Fresh groceries, particularly fruits, vegetables,<br>
+          whole grains, and lean proteins, play a crucial<br>
+          role in nourishing our bodies and promoting<br>
+          overall well-being
+        </p>
+      </div>
+
+      <div class="footer-col nav-col">
+        <h3>NAVIGATE</h3>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms & Conditions</a>
+        <a href="./how-to-order.html">How to Order</a>
+        <a href="./about.html">About Us</a>
+      </div>
+
+      <div class="footer-col store-col">
+        <h3>G-STORE</h3>
+        <p>Reg: T21542GST548</p>
+        <p>TIN: 14578452884</p>
+        <p>Email: groceries at doorstep@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyrights 2022© Groceries At Doorstep Ltd
+    </div>
+  </footer>
+
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+
+  searchInput.addEventListener('input', function () {
+    const filter = this.value.toLowerCase().trim();
+    const categoryCards = document.querySelectorAll('.category-card');
+
+    categoryCards.forEach(card => {
+      const label = card.querySelector('p').innerText.toLowerCase();
+      if (label.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+
+<script src="./assets/js/toggle.js"></script>
+
+</body>
+
+</html>

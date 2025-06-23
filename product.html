@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groceries | Product Details</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+  <link rel="stylesheet" href="./assets/css/product.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Top Green Banner -->
+  <div class="top-banner">
+    Fresh & Organic produce from our farmers to your kitchen
+  </div>
+
+  <!-- Navbar -->
+
+  <!-- Header -->
+  <header class="header">
+    
+    <!-- Top row: logo and search -->
+    <div class="header-top">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Groceries Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for products">
+        <button id="searchBtn">
+          <img src="./assets/images/search icon.png" alt="Search">
+          <span>Search</span>
+        </button>
+      </div>
+    </div>
+
+
+
+  </header>
+
+    <!-- Bottom row: nav links -->
+    <div class="header-bottom">
+          <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="sales.html">Best Sales</a>
+        <a href="blogs.html">Blogs</a>
+      </nav>
+
+      <div class="right-links">
+        <a href="cart.html" class="cart-icon">
+          <img src="./assets/images/cart icon.png" alt="Cart">
+        </a>
+        <a href="account.html" class="account-btn">Register Now</a>
+      </div>
+    </div>
+
+
+  <div class="product-container">
+    <div class="left">
+      <img id="main-img" src="" alt="Product Image" />
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+    <div class="right">
+      <h2 id="prod-name"></h2>
+      <p id="prod-desc"></p>
+      <h3 id="prod-price" data-base=""></h3>
+      <p class="tax">TAX INCLUDED | SHIPPING CALCULATED AT CHECKOUT</p>
+
+      <div class="qty-select">
+        <button onclick="changeQty(-1)">-</button>
+        <span id="qty">1</span>
+        <button onclick="changeQty(1)">+</button>
+      </div>
+<p id="size-label">Quantity: 250g</p>
+
+      <div class="sizes">
+        <label><input type="radio" name="size" value="250g" checked /> 250g</label>
+        <label><input type="radio" name="size" value="500g" /> 500g</label>
+        <label><input type="radio" name="size" value="1kg" /> 1kg</label>
+      </div>
+
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+
+      <div class="info">
+        <p><img src="./assets/images/truck.png" /> Free shipping on all orders over 450 rupees</p>
+        <p><img src="./assets/images/clock.png" /> Delivery in 3-4 working days shipping & return</p>
+        <p><a href="#"> Free delivery and return policies</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc-section">
+    <h3 style="text-decoration: underline;">DESCRIPTION</h3>
+    <p id="long-desc"></p>
+    <h3>It is often described as sweet, juicy and bright red berries with a fragrant,
+      fruity aroma. They are typically sold fresh in containers or boxes and are a popular
+      addition to various recipes and snacks.
+      Here's a more detailed look at how strawberries might be described in a grocery store
+      setting: </h3>
+    <h3>Appearance:</h3>
+    <ul>
+      <li> Color: Bright red, with variations depending on the variety. </li>
+      <li>Shape: Typically round or oval, with a smooth surface.</li>
+      <li>Seeds: These seeds are small, whitish or 'rownish specks that cover the surface of the
+        fruit.</li>
+      <li>Freshness: Shiny, Firm and free from blemishes or mold.</li>
+    </ul>
+    <h3>Taste and Aroma:</h3>
+
+    <ul>
+      <li>Flavor: Sweet and juicy, with a slightly tart or sour note in some varieties</li>
+      <li>Aroma: A pleasant, fruity, and fragrant arom</li>
+    </ul>
+    <h3>Nutririon</h3>
+    <ul>
+      <li>Vitamin C: Rich in vitamin C, an important antioxidant.</li>
+      <li>Fiber: A good source of fiber.</li>
+      <li>Other nutrients: Contains other vitamins, minerals, and antioxidant.</li>
+      <li>Low in calories: A healthy and low-calorie fruit.</li>
+    </ul>
+    <h3>Uses:</h3>
+    <ul>
+      <li>Fresh consumption: Enjoyed as a snack or added to salads, desserts, or smoothies</li>
+      <li>Culinary applications: Used in jams, sauces, desserts, and other dishes.</li>
+    </ul>
+    <h3>Storage:</h3>
+    <ul>
+      <li> Refrigeration: Should be refrigerated to maintain freshness.</li>
+      <li>Humidity: Best stored in the refrigerator at high humidity.</li>
+    </ul>
+  </div>
+
+  <!-- Footer Include -->
+<div class="contact-section">
+  <div class="orange-box">
+    <div class="contact-text">
+      <strong>Get in Touch with us</strong><br>
+      +91 91010 90000
+    </div>
+  </div>
+  <div class="icon-strip">
+    <div class="feature">
+      <img src="./assets/images/free shipping icon.png" alt="Free Shipping">
+      <div>
+        <strong>Free Shipping</strong><br>
+        <small>For Orders Above 500</small>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="./assets/images/fresh produce icon.png" alt="Fresh Produce">
+      <div>
+        <strong>Fresh Produce</strong><br>
+        <small>Guaranteed Product Warranty</small>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="./assets/images/safety icon.png" alt="Safety">
+      <div>
+        <strong>100% Safety & Security</strong><br>
+        <small>Your Data is Highly Secured</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-col logo-col">
+      <img src="./assets/images/logo.png" alt="Logo" class="footer-logo">
+      <p>
+        Fresh groceries, particularly fruits, vegetables,<br>
+        whole grains, and lean proteins, play a crucial<br>
+        role in nourishing our bodies and promoting<br>
+        overall well-being
+      </p>
+    </div>
+
+    <div class="footer-col nav-col">
+      <h3>NAVIGATE</h3>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms & Conditions</a>
+        <a href="./how-to-order.html">How to Order</a>
+        <a href="./about.html">About Us</a>
+    </div>
+
+    <div class="footer-col store-col">
+      <h3>G-STORE</h3>
+      <p>Reg: T21542GST548</p>
+      <p>TIN: 14578452884</p>
+      <p>Email: groceries at doorstep@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyrights 2022© Groceries At Doorstep Ltd
+  </div>
+</footer> 
+
+<script src="./assets/js/toggle.js"></script>
+
+  <script src="./assets/js/cart.js"></script>
+
+<script src="./assets/js/product.js"></script>
+</body>
+
+</html>
